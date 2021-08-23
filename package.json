@@ -1,0 +1,34 @@
+{
+  "name": "esbuild-test",
+  "version": "0.0.3",
+  "author": "kris",
+  "description": "esbuild test",
+  "main": "cjs/index.js",
+  "private":false,
+  "scripts": {
+    "es": "esbuild lib/index.ts --bundle --outdir=cjs --sourcemap --target=es6 --platform=node --external:node-fetch ",
+    "test": "jest lib/index.test.ts "
+  },
+  "keywords": [],
+  "dependencies": {
+    "nanoid": "^3.1.25"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "@babel/preset-typescript": "^7.15.0",
+    "@types/jest": "^27.0.1",
+    "babel-jest": "^27.0.6",
+    "jest": "^27.0.6",
+    "node-fetch": "^2.6.1"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wangkris03/esbuild-test.git"
+  },
+  "bugs": {
+    "url": "git+https://github.com/wangkris03/esbuild-test.git"
+  },
+  "homepage": "git+https://github.com/wangkris03/esbuild-test.git"
+}
